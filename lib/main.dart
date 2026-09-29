@@ -103,7 +103,8 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
-      body: Center(
+      //Palier 4
+      /*body: Center(
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
         child: Column(
@@ -151,6 +152,29 @@ class _MyHomePageState extends State<MyHomePage> {
             child: const Icon(Icons.refresh),
           ),
         ],
+      ),*/
+
+      //palier5
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const CircleAvatar(radius: 50, child: Icon(Icons.person, size: 50)),
+            const SizedBox(height: 16),
+            const Text(
+              'Oussama Hlali', //
+              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 8),
+            const Text('DSI'),
+            const SizedBox(height: 24),
+            const Text(
+              'hlalioussama194@gmail.com', //
+              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            ),
+            Text('Compteur : $_counter'),
+          ],
+        ),
       ),
     );
   }
