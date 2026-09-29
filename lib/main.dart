@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  //le main de l'application
+  runApp(const MyApp()); // la fonction qui va l'afficher à l'emilateur
 }
 
 class MyApp extends StatelessWidget {
@@ -11,6 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      // Pour la confiduration de l'app
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.
@@ -58,6 +60,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _incrementCounter() {
     setState(() {
+      //son role est de faire refresh a la page
+
       // This call to setState tells the Flutter framework that something has
       // changed in this State, which causes it to rerun the build method below
       // so that the display can reflect the updated values. If we changed
@@ -75,7 +79,9 @@ class _MyHomePageState extends State<MyHomePage> {
     // The Flutter framework has been optimized to make rerunning build methods
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
+
     return Scaffold(
+      //c'est le squellette de l'app
       appBar: AppBar(
         // TRY THIS: Try changing the color here to a specific color (to
         // Colors.amber, perhaps?) and trigger a hot reload to see the AppBar
@@ -120,3 +126,11 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
+// le dossier lib/ est le coeur de l'application
+
+// le dossier android/ contient du code pour la fonctionner  lapplication sur l'android
+
+// le dossier web/ contient des fichiers pour l'application s'execute sur le web
+
+// le fichier pubspec.yaml contient le nom et la verison de l'application aussi les bibliotheques necessaires pour cette app
